@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>배고팟</title>
+<script src="./js/jquery-3.7.1.min.js"></script>    
+</head>
+<body>
+
+<div id="map" style="margin-top: 10px; width:400px;height:650px;"></div>
+
+<script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=bf290bec6b7de30eb3c7f533f6f6720a&libraries=clusterer"></script>
+<script>
+	var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+	mapOption = { 
+        center : new kakao.maps.LatLng(37.4859368, 126.8971966), // 지도의 중심좌표 
+	    level: 3 // 지도의 확대 레벨
+	};
+	
+	//지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
+	var map = new kakao.maps.Map(mapContainer, mapOption); 
+	
+	var data = [
+		[37.4859368, 126.8971966,'<a href="#"><div><p>무한자금성</p></div></a>'],
+		[37.4859368, 126.8981966,'<a href="#"><div><p>하이탕마라탕</p></div></a>'],
+		[37.4859368, 126.8991966,'<a href="#"><div><p>낭만부대찌개</p></div></a>']
+	]
+	
+	for(var i=0; i<data.length; i++){
+		var marker = new kakao.maps.Marker({
+		    position: new kakao.maps.LatLng(data[i][0], data[i][1]),
+		    map: map
+		});
+		
+	    var infowindow = new kakao.maps.InfoWindow({
+	        content: data[i][2],
+	    });
+	    
+	    inforwindow.open(map, markers);
+	}
+</script>
+</body>
+</html>

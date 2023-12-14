@@ -1,0 +1,14 @@
+positions = [
+    
+    {"lat": 37.27943075229118, "lng": 127.01763998406159, "title":'<div style="padding: 5px">제발되게해주세요ㅠ</div>'},
+    {"lat": 37.27943075229118, "lng": 127.11763998406159, "title":'<div style="padding: 5px">제발되게해주세요ㅠ</div>'},
+    {"lat": 37.27943075229118, "lng": 127.21763998406159, "title":'<div style="padding: 5px">제발되게해주세요ㅠ</div>'},
+    {"lat": 37.27943075229118, "lng": 127.31763998406159, "title":'<div style="padding: 5px">제발되게해주세요ㅠ</div>'},
+    {"lat": 37.27943075229118, "lng": 127.41763998406159, "title":'<div style="padding: 5px">제발되게해주세요ㅠ</div>'},
+    {"lat": 37.27943075229118, "lng": 127.51763998406159, "title":'<div style="padding: 5px">제발되게해주세요ㅠ</div>'},
+    {"lat": 37.27943075229118, "lng": 127.61763998406159, "title":'<div style="padding: 5px">제발되게해주세요ㅠ</div>'},
+    {"lat": 37.27943075229118, "lng": 127.71763998406159, "title":'<div style="padding: 5px">제발되게해주세요ㅠ</div>'},
+    {"lat": 37.27943075229118, "lng": 127.81763998406159, "title":'<div style="padding: 5px">제발되게해주세요ㅠ</div>'},
+    {"lat": 37.27943075229118, "lng": 127.91763998406159, "title":'<div style="padding: 5px">제발되게해주세요ㅠ</div>'}
+    
+  ]
