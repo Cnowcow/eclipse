@@ -1,0 +1,67 @@
+	.header, .footer { 
+	z-index: 200;
+	}
+	.background1 { 
+		background-color: #0098ff;
+		width:393px; height:108px;
+		position:absolute;
+		left:0px;
+		top:0px;
+		z-index: 200;
+	}
+	.menu { 
+		position:absolute;
+		left:17px;
+		top:47px;
+		z-index: 200;
+	}
+	.title { 
+		position:absolute;
+		left:157px;
+		top:48px;
+		z-index: 200;
+	}
+	.me { 
+		position:absolute;
+		left:322px;
+		top:33px;
+		z-index: 200;
+	}
+	
+	.background2 { 
+		background-color: #0098ff;
+		width:393px; height:80px;
+		position:absolute;
+		top:772px;
+		z-index: 200;
+	}
+	.map { 
+		position:absolute;
+		left:23px;
+		top:794px;
+		z-index: 250;
+	}
+	.location { 
+		position:absolute;
+		left:90px;
+		top:789px;
+		z-index: 250;
+	}
+	.home { 
+		position:absolute;
+		left:156px;
+		top:759px;
+		z-index: 250;
+	}
+	.party { 
+		position:absolute;
+		left:267px;
+		top:790px;
+		z-index: 250;
+	}
+	.pay { 
+		position:absolute;
+		left:335px;
+		top:796px;
+		z-index: 250;
+	}
