@@ -178,7 +178,7 @@
 
     <div id="map" style="width: 400px; height: 650px; margin: 100 0 0 100;">
         <div id="top"><img src="./img/top.png" width="400px"></div>
-        <div id="marketinfover3"></div>
+        <div id="marketinfover4"></div>
         <button id="centerButton" onclick="centerToCurrentLocation()"></button>
         <div id="bottom"><img src="./img/bottom.png" width="400px"></div>
     </div>
