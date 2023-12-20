@@ -1,0 +1,120 @@
+   a{
+   text-decoration: none;
+   }
+   
+   .header, .footer { 
+      z-index: 200;
+   }
+
+   i{
+      color: #0098ff;
+      font-size: 35px;
+   }
+
+   
+   .header {
+   		position: absolute;
+	    background-color: white;
+	    width: 393px; 
+	    height: 100px;
+	    box-shadow: 0px 2px 4px lightgray; 
+   }
+   
+   .menu{
+		position: absolute;
+		top: 40px;
+		left: 20px;
+	    display:inline-block;
+	    width: 40px;
+	    height: 40px;
+   }
+   .title{
+		position: absolute;
+		top: 45px;
+	    display:inline-block;
+	    text-align: center;
+	    left: 150px;
+   }
+   .bi-title {
+		color: black;
+		font-size: 30px;
+		font-weight: bolder;
+   }
+   
+   .me{
+	   	position: absolute;
+		top: 40px;
+		right: 20px;
+		display: inline-block;
+		width: 40px;
+		height: 40px;
+   }
+     
+
+  
+  
+   .footer {
+   		position: absolute;
+		background-color: white;
+    	width: 393px;
+    	height: 100px;
+   		bottom: 0px;
+    	box-shadow: 0px -2px 4px lightgray; 
+   }
+   
+   
+   .map{
+   		position: absolute;
+		bottom: 60px;
+		left: 20px;
+		display: inline-block;
+		width: 40px;
+	   	height: 40px;
+   }
+   
+   .location{
+   		position: absolute;
+		bottom: 60px;
+		left: 90px;
+		display: inline-block;
+		width: 40px;
+	   	height: 40px;
+   }
+   
+   
+   .home{
+   		position: absolute;
+		bottom: 40px;
+		left: 60px;
+	    width: 80px;
+	    height: 80px;
+	    left: 156.5px;
+	    border-radius: 50%;
+	    background-color: white;
+	    text-align: center;
+		box-shadow: 0px 0px 4px gray;
+   }
+   .bi-house {
+   		position: relative;
+   		top: 2px; 
+    	font-size: 45px;
+   }
+   
+   .party{
+   		position: absolute;
+		bottom: 60px;
+		right: 90px;
+	    display: inline-block;
+	   	width: 40px;
+	   	height: 40px;
+	   	margin-left: 127px;
+   }
+   
+   .pay{
+   		position: absolute;
+		bottom: 60px;
+		right: 20px;
+	   	width: 40px;
+	   	height: 40px;
+	    display: inline-block;
+   }

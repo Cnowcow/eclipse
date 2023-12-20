@@ -1,0 +1,132 @@
+    /* 전체메뉴 모달세팅 */
+        main:before{
+            content:"";
+            display: block;
+            height: 25px;
+        }
+        main section>div:first-child{
+            float : left;
+        }
+        main section>div:nth-child(2){
+            font-size: 25px;
+            font-weight: 400;
+            line-height: normal;
+            color : #6f6f6f;
+            float:left;
+        }
+        .nav_menu_line{
+            clear : both;
+            width: 357px;
+            border : 2px solid #d9d9d9;
+
+        }
+        .nav_menu_detail{
+            margin-top:20px;
+        }
+        main{
+            padding-left : 37px;
+        }
+        .front_menu_box{
+            width:8px;
+            height: 23px;
+            margin-top:4px;
+            background: #0098FF;
+        }
+        .menu_for_nav{
+            width: 393px;
+            height: 862px;
+            position: fixed;
+            left : -100%;
+            display: block;
+            z-index: 2;
+            background-color: white;
+            
+        }
+        .menu_for_nav button{
+            border : none;
+            background-color : white;
+        }
+        .menu_for_nav .header_first{
+            color : black;
+        }
+        .menu_for_nav .header_second font{
+            color : black;
+        }
+        .menu_for_nav header{
+            background-color: white;
+            padding:12px;
+            padding-bottom:0px;
+        }
+
+        
+        
+ /* 바디 모달부분세팅 */
+        body div button div a{
+            color: #FFF;
+            text-align: center;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        body div button div{
+            padding-top:9.5px;
+            padding-bottom : 9.5px;
+        }
+        #modal_register{
+            display:none;
+            flex-direction : row;
+            position: absolute;
+            top : 149px;
+            left:0px;
+            width : 195px;
+            height: 350px;
+            background-color: #0098ff;
+            z-index: 1;
+            border-radius: 20px;
+            border: none;
+            cursor: default;
+        }
+        #modal_manage{
+            display:none;
+            flex-direction : row;
+            position: absolute;
+            top : 149px;
+            left:199px;
+            width : 195px;
+            height: 350px;
+            background-color: #0098ff;
+            z-index: 1;
+            border-radius: 20px;
+            border: none;
+            cursor: default;
+        }
+        #modal_payment{
+            display:none;
+            flex-direction : row;
+            position: absolute;
+            top : 503px;
+            left:0px;
+            width : 195px;
+            height: 350px;
+            background-color: #0098ff;
+            z-index: 1;
+            border-radius: 20px;
+            border: none;
+            cursor: default;
+        }
+        #modal_ask{
+            display:none;
+            flex-direction : row;
+            position: absolute;
+            top : 503px;
+            left:199px;
+            width : 195px;
+            height: 350px;
+            background-color: #0098ff;
+            z-index: 1;
+            border-radius: 20px;
+            border: none;
+            cursor: default;
+        }
+        

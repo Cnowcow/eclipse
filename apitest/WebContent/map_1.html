@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>페이지 1</title>
+    <style>
+        #page2Frame {
+            width: 100%;
+            height: 100vh; /* 100% 높이를 사용하거나 필요에 따라 조절하세요 */
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="loadPage2Content()">페이지 2 내용 불러오기</button>
+    <iframe id="page2Frame"></iframe>
+
+    <script>
+        function loadPage2Content() {
+            var page2Frame = document.getElementById('page2Frame');
+            page2Frame.src = 'markethome1.jsp';
+        }
+    </script>
+</body>
+</html>
