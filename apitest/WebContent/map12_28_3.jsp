@@ -83,13 +83,15 @@
 	}
 	
 	#centerButton {
-		position: absolute;
-		bottom: 40px;
-		left: 20px;
-		width: 44px;
-		height: 44px;
-		z-index: 10;
-		cursor: pointer;
+	    position: absolute;
+	    bottom: 58px;
+	    left: 14.5px;
+	    width: 38px;
+	    height: 38px;
+	    z-index: 1;
+	    cursor: pointer;
+	    box-shadow: 0px 0px 6px 0px gray;
+	    border-radius: 50px;
 	}
 	
 	#markethome {
@@ -100,7 +102,7 @@
 		position: absolute;
 		width: 360px;
 		height: 560px;
-		z-index: 200;
+		z-index: 100;
 		top: 192px;
 		left: 16px;
 		border: 1px solid rgba(0, 152, 255, 0.3);
@@ -113,6 +115,19 @@
 		position: absolute;
 		top: 27px;
 		left: 4px;
+	}
+	#currentLocationButton {
+	    position: absolute;
+	    z-index: 1;
+	    background-color: white;
+	    color: #0098ff;
+	    padding: 8px 12px 8px 10px;
+	    border-radius: 30px;
+	    font-size: 13px;
+	    left: 135.185px;
+	    top: 118px;
+	    cursor: pointer;
+	    box-shadow: 0px 0px 6px 0px gray;
 	}
 </style>
 <script type="text/javascript">
@@ -175,13 +190,35 @@
 				});
 				
 				markers.push(marker<%=i%>);
+				showAllMarkers();
 			<%}%>
 		});
 	}
 
 	naver.maps.onJSContentLoaded = init_map;
 
+	 function showAllMarkers() {
+	        for (var i = 0; i < markers.length; i++) {
+	            markers[i].setMap(map);
+	        }
+	    }
 
+	    function showCurrentLocationMarkers() {
+	        var bounds = map.getBounds();
+
+	        for (var i = 0; i < markers.length; i++) {
+	            var markerPosition = markers[i].getPosition();
+
+	            // 마커가 현재 지도 보기 경계 내에 있는지 확인합니다.
+	            if (bounds.hasLatLng(markerPosition)) {
+	                markers[i].setMap(map);
+	            } else {
+	                markers[i].setMap(null); // 경계 바깥에 있는 마커를 숨깁니다.	
+	            }
+	        }
+	    }
+	
+	
 	
 	//centerButton 클릭이벤트
 	function center() {
@@ -244,13 +281,12 @@
 				onclick="hideIframe()"></i>
 			<iframe name="here"></iframe>
 		</div>
-
-
-
+		
+		<div><a id="currentLocationButton" onclick="showCurrentLocationMarkers()"><strong><i style="color: #0098ff; font-size: 13px;" class="bi bi-arrow-clockwise"></i> 현 지도에서 검색</strong></a></div>
 
 		<jsp:include page="/hf/footer2.jsp" />
 
 	</div>
-
+	<div id="values">아..</div>
 </body>
 </html>

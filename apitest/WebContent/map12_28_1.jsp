@@ -83,13 +83,16 @@
 	}
 	
 	#centerButton {
-		position: absolute;
-		bottom: 40px;
-		left: 20px;
-		width: 44px;
-		height: 44px;
-		z-index: 10;
-		cursor: pointer;
+	    position: absolute;
+	    bottom: 77px;
+	    right: 8.5px;
+	    width: 32px;
+	    height: 32px;
+	    z-index: 10;
+	    cursor: pointer;
+	    border: 0.4px solid gray;
+	    background-color: white;
+	    border-radius: 2px;
 	}
 	
 	#markethome {
@@ -113,6 +116,18 @@
 		position: absolute;
 		top: 27px;
 		left: 4px;
+	}
+	#currentLocationButton{
+		position: absolute;
+		z-index: 300;
+		background-color: #0098ff;
+		color: white;
+		padding: 12px 12px 12px 10px;
+		border-radius: 30px;
+		font-size: 15px;
+		left: 126.5px;
+    	top: 704px;
+    	cursor: pointer;
 	}
 </style>
 <script type="text/javascript">
@@ -175,13 +190,35 @@
 				});
 				
 				markers.push(marker<%=i%>);
+				showAllMarkers();
 			<%}%>
 		});
 	}
 
 	naver.maps.onJSContentLoaded = init_map;
 
+	 function showAllMarkers() {
+	        for (var i = 0; i < markers.length; i++) {
+	            markers[i].setMap(map);
+	        }
+	    }
 
+	    function showCurrentLocationMarkers() {
+	        var bounds = map.getBounds();
+
+	        for (var i = 0; i < markers.length; i++) {
+	            var markerPosition = markers[i].getPosition();
+
+	            // 마커가 현재 지도 보기 경계 내에 있는지 확인합니다.
+	            if (bounds.hasLatLng(markerPosition)) {
+	                markers[i].setMap(map);
+	            } else {
+	                markers[i].setMap(null); // 경계 바깥에 있는 마커를 숨깁니다.	
+	            }
+	        }
+	    }
+	
+	
 	
 	//centerButton 클릭이벤트
 	function center() {
@@ -244,13 +281,11 @@
 				onclick="hideIframe()"></i>
 			<iframe name="here"></iframe>
 		</div>
-
-
-
+		
+		<div><a id="currentLocationButton" onclick="showCurrentLocationMarkers()"><strong><i style="color: white; font-size: 18px;" class="bi bi-arrow-clockwise"></i> 현 지도에서 검색</strong></a></div>
 
 		<jsp:include page="/hf/footer2.jsp" />
 
 	</div>
-
 </body>
 </html>
