@@ -53,15 +53,4 @@
   <hr>
 
   - ### 지도 화면, 식당 정보 화면, header, footer 디자인
-    ![image (6)](https://github.com/user-attachments/assets/3118458e-cf8e-4f69-9302-9daf52121a91)![image (7)](https://github.com/user-attachments/assets/8f94f86d-710e-4d9a-b5b3-dd1eedfb9570)![image (8)](https://github.com/user-attachments/assets/982f5bcc-8918-4221-bbcc-b5c8e4254261)
-  <hr>
-
-## 🔎 문제점 및 해결방안
-
-- ### MVC패턴을 배우기 전에 진행했던 프로젝트여서 JSP페이지에 스크립틀릿 코드가 너무 길어서 유지보수성이 매우 떨어지고 알아보기 힘든 단점이 있었다.
-    → 추후에 MVC패턴, RESTful API를 이용해 코드 리팩토리 유무 확인….
-    
-- ### 당시에는 몰랐으나, 다시 보니 Back-end 보다 Front-end에 더 신경을 쓴 것 같은 아쉬움.  
-
-##  🔍프로젝트 기간
-2023-11-13 ~ 2024-01-05  
+    ![image (6)](https://github.com/user-attachments/assets/3118458e-cf8e-4f69-9302-9daf52121a91)![image (7)](https://github.com/user-attachments/assets/8f94f86d-710e-4d9a-b5b3-dd1eedfb9570)![image (8)](https://github.com/user-attachments/assets/982f5bcc-8918-4221-bbcc-b5c8e4월)
